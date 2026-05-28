@@ -1,0 +1,318 @@
+{
+  "info": {
+    "_postman_id": "57e49827-ee9c-49a3-b67f-f60f981b8441",
+    "name": "PC12410038324100803 EndPoints",
+    "description": "Colección de Postman para los controladores TipoServicios y Ordenservicio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54272522",
+    "_collection_link": "https://go.postman.co/collection/54272522-57e49827-ee9c-49a3-b67f-f60f981b8441?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "TipoServicios",
+      "item": [
+        {
+          "name": "Listar todos",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5088/api/TipoServicios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "TipoServicios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5088/api/TipoServicios/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "TipoServicios",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "default"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Alineación\",\n  \"preciobase\": 150.00\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5088/api/TipoServicios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "TipoServicios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "default"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 4,\n  \"nombre\": \"Alineación y Balanceo\",\n  \"preciobase\": 200.00\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5088/api/TipoServicios/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "TipoServicios",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5088/api/TipoServicios/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "TipoServicios",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ordenservicio",
+      "item": [
+        {
+          "name": "Listar todos",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5088/api/Ordenservicio",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "Ordenservicio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener por ID",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5088/api/Ordenservicio/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "Ordenservicio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Crear",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "default"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fechaingreso\": \"2026-05-28T10:00:00\",\n  \"descripcionproblema\": \"Fallo en el motor\",\n  \"costoestimado\": 500.00,\n  \"estado\": \"Pendiente\",\n  \"vehiculoid\": 1,\n  \"tiposervicioid\": 1\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5088/api/Ordenservicio",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "Ordenservicio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "default"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 4,\n  \"fechaingreso\": \"2026-05-28T10:00:00\",\n  \"descripcionproblema\": \"Fallo en el motor - reparado\",\n  \"costoestimado\": 750.00,\n  \"estado\": \"Completado\",\n  \"vehiculoid\": 1,\n  \"tiposervicioid\": 2\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5088/api/Ordenservicio/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "Ordenservicio",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5088/api/Ordenservicio/4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5088",
+              "path": [
+                "api",
+                "Ordenservicio",
+                "4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
