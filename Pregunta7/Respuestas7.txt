@@ -1,0 +1,5 @@
+1)Que dificultades tuviste durante el scaffolding y como las solucionaste?
+- Ninguna, ya que la cadena de scaffold del repositorio del profesor estaba correcta, solo tuvimos que poner los datos del servidor, nombre de la base de datos, etc.
+2)Que diferencias notaste entre usar un controlador autogenerado y uno con repository? ¿que enfoque prefieres?
+- Notamos que hacerlo solo con controlador es mucho mas facil ya que es solamente algo propio del Visual, en cambio con repository tuvimos que generar varios archivos y demas cosas que pueden hacer mas escalable el proyecto.
+- Preferimos el primer enfoque solo con controlador autogenerado
