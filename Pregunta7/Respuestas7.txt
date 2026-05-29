@@ -3,3 +3,7 @@
 2)Que diferencias notaste entre usar un controlador autogenerado y uno con repository? ¿que enfoque prefieres?
 - Notamos que hacerlo solo con controlador es mucho mas facil ya que es solamente algo propio del Visual, en cambio con repository tuvimos que generar varios archivos y demas cosas que pueden hacer mas escalable el proyecto.
 - Preferimos el primer enfoque solo con controlador autogenerado
+3)¿Que buenas practicas implementaste (en codigo real) y por que? 
+Usamos practicas como los codigos HTTP correctos y el patrón de repositorio con los servicios de DTO, en los codigos HTTP es para entienda el proposito en las respuestas de los controladores y en el patron  de repositorio se usaron DTO para no exponer la entidad directamente con las interfaces para cambiar implementaciones sin afectar consumidores
+4)¿Usaste herramientas de IA en esta practica? ¿Que herramientas usaste y en que parte del proyecto?
+Si, usamos Github Copilot para la generacion de los patrones de repositorio de OrdenServicio
